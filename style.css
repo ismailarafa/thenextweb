@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900');
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font: normal 100% 'Maven Pro', Arial, sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: auto;
+  vertical-align: baseline;
+  padding: 0;
+  height: auto;
+}
+
+.topnav {
+  background-color: black;
+  right: 0;
+  left: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8em;
+  font-weight: 500;
+  padding-right: 1em;
+  line-height: 0.5em;
+  letter-spacing: 0.02em;
+  position: fixed;
+  top: 0;
+}
+
+.topnav::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+ol {
+  float: right;
+}
+
+.topnav ul {
+  float: left;
+  margin-left: -1.75em;
+}
+
+.topnav li {
+  display: inline;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+h3 {
+  color: #f42;
+  font-size: 1.75em;
+  letter-spacing: -0.05em;
+  line-height: 1.2em;
+  margin-left: 0.5em;
+}
+
+h3:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.topnav li:hover {
+  color: #fff;
+}
+
+.header {
+  height: 3.7em;
+  background-color: #fff;
+  position: fixed;
+  top: 2em;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #eaeaea;
+  z-index: 1;
+  box-shadow: 3px 2px 8px #e5e5e5;
+}
+
+.header::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.header img {
+  width: 8em;
+  float: left;
+  height: 3.68em;
+}
+
+.header ol {
+  float: left;
+  margin-top: 1.3em;
+  color: #aeabaa;
+}
+
+.header li {
+  display: inline;
+  margin-left: 1em;
+  cursor: pointer;
+}
+
+.header li:hover {
+  color: black;
+}
+
+.top-page {
+  width: 100%;
+  height: 27.5em;
+  margin-top: 5.75em;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.5em;
+  color: #fff;
+}
+
+.maingradient {
+  float: left;
+  background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/switch.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 67%;
+  height: 27em;
+  padding: 0 1em;
+}
+
+.maingradient p {
+  text-align: right;
+  font-size: 0.9em;
+  padding-bottom: 12em;
+  margin-top: 1.5em;
+}
+
+.top-page h1 {
+  font-size: 2.5em;
+  line-height: 1.1em;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5em;
+}
+
+.top-page small {
+  padding-left: 0.2em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.top-page h2 {
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.maingradient h6 {
+  padding-left: 0.2em;
+}
+
+.top-page h6 {
+  font-weight: 500;
+  font-size: 1em;
+  margin: 0;
+  padding-top: 2em;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+}
+
+[class*="mainright"] {
+  float: right;
+  width: 32.5%;
+  height: 13.3em;
+  margin-bottom: 0.5%;
+  padding: 0 1em;
+}
+
+.mainright1 {
+  background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/screenshot.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mainright2 {
+  background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/mastercard.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mainright1 h6 {
+  margin-top: 3em;
+}
+
+.mainright2 h6 {
+  margin-top: 1em;
+}
+
+[class*="mainright"] h2 {
+  letter-spacing: -0.0001em;
+  line-height: 1.23em;
+  font-size: 1.5em;
+}
+
+.news {
+  padding: 1em;
+  margin: auto;
+  width: 90%;
+  margin-top: 2em;
+}
+
+.news::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.newsbox {
+  float: left;
+  width: 24%;
+  display: inline;
+  height: 15em;
+  margin: 0.5%;
+  padding: 0.5em;
+}
+
+.newsbox h5 {
+  font-size: 0.96em;
+  margin: 0;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+  padding-top: 1em;
+  line-height: 1.25em;
+  cursor: pointer;
+}
+
+.newsbox h5:hover {
+  color: #f42;
+  text-decoration: underline;
+}
+
+.newsbox p {
+  margin: 0;
+  font-weight: 100;
+  color: #aaa;
+  line-height: 1.75em;
+  width: 100%;
+}
+
+.news img {
+  width: 100%;
+  height: 8em;
+}
+
+.author:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.big-grid {
+  width: 90%;
+  display: block;
+  margin: auto;
+  padding: 0.5%;
+}
+
+.big-grid::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+.bg-box {
+  float: left;
+  display: inline;
+  height: 43em;
+  width: 32.25%;
+  margin: 0.5%;
+  padding: 1%;
+}
+
+.bg-imj {
+  height: 16em;
+  margin-top: -0.5em;
+  padding: 1%;
+}
+
+.sub-imj {
+  height: 6.5em;
+  background-color: rgba(255, 68, 34, 0.06);
+  color: #f42;
+}
+
+.bg-imj h6 {
+  margin: 0;
+  margin-left: 0.75em;
+  margin-top: 8em;
+  color: #fff;
+  font-weight: 100;
+  font-size: 0.8em;
+  margin-bottom: -1.5em;
+  line-height: 2em;
+}
+
+.bg-imj h3 {
+  color: #fff;
+  font-size: 1.25em;
+  margin-bottom: 0;
+  line-height: 1.25em;
+  letter-spacing: -0.025em;
+  width: 100%;
+  padding-right: 2%;
+}
+
+.bg-imj h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.bg-imj p {
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0;
+  margin-left: 4%;
+}
+
+.bg-lst li::before {
+  content: "• ";
+  color: #f42;
+}
+
+.bg-lst {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-lst li {
+  font-size: 0.8em;
+  margin-bottom: 0.25em;
+  border-bottom: 1px solid #eee;
+  line-height: 1.6em;
+  letter-spacing: -0.0025em;
+  opacity: 0.75;
+  padding-bottom: 0.5em;
+}
+
+.bg-lst li:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+#imj1 {
+  background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/facebook.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imj2 {
+  background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/iphone8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imj3 {
+  background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/iem.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imj4 {
+  background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/kickasstorrents.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imj5 {
+  background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/eye.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imj6 {
+  background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/internet.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imj7 {
+  background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/steam.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imj8 {
+  background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/army.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imj9 {
+  background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/switch.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ttl {
+  margin-left: -0.025em;
+}
+
+.sub-imj img {
+  width: 25%;
+  min-height: 98%;
+  float: right;
+  cursor: pointer;
+  margin-top: -1em;
+}
+
+.sub-imj h6 {
+  margin: 0;
+  font-size: 0.875em;
+  letter-spacing: 0.025em;
+  margin-bottom: -1.3em;
+  line-height: 2.5em;
+  font-weight: 100;
+  padding-left: 0.5em;
+}
+
+.sub-imj h4:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.sub-imj h4 {
+  width: 74%;
+  float: left;
+  margin-right: 0.5%;
+  padding-left: 0.5em;
+  letter-spacing: -0.05em;
+  line-height: 1.25em;
+}
+
+.sub-imj::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+.author-imj:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+video {
+  width: 25%;
+  float: right;
+  cursor: pointer;
+  object-fit: cover;
+  margin-top: -1em;
+  min-height: 98%;
+}
+
+.btm-imj {
+  margin-top: 2.5em;
+}
+
+.deals {
+  width: 90%;
+  display: block;
+  margin: auto;
+  height: 50em;
+  padding: 1%;
+}
+
+.deals-header {
+  display: block;
+  margin: auto;
+  padding: 0;
+  width: 99%;
+}
+
+.deals-header p {
+  float: right;
+  color: #f42;
+  margin-top: 2.25em;
+}
+
+.deals-header p:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.deals-header h3 {
+  float: left;
+  margin-left: -0.025em;
+}
+
+.deals-header::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.deals-box {
+  display: inline;
+  float: left;
+  width: 24%;
+  height: 20em;
+  margin: 0.5%;
+}
+
+.deals-box img {
+  width: 100%;
+  height: 75%;
+}
+
+.deals-box h4 {
+  margin: 0;
+  width: 100%;
+  font-size: 0.95em;
+  margin-bottom: 0.5em;
+}
+
+.deals-box p {
+  margin: 0;
+  font-size: 1em;
+  color: #000;
+}
+
+.oldprice {
+  font-size: 0.8em;
+  color: #aaa;
+  text-decoration: line-through;
+  margin: 0;
+  padding-right: 0.5em;
+}
+
+.prefooter {
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 0.0125%;
+  text-align: center;
+  display: block;
+  color: #f42;
+  padding-bottom: 5%;
+  margin-bottom: -1.3em;
+}
+
+.prefooter h6 {
+  font-weight: 100;
+  font-size: 1em;
+  letter-spacing: -0.05em;
+  line-height: 2em;
+}
+
+.prefooter h1 {
+  font-size: 4em;
+  margin: auto;
+  margin-top: -0.5em;
+  letter-spacing: -0.05em;
+  display: block;
+  width: 95%;
+  padding-bottom: 0.5em;
+  line-height: 1em;
+}
+
+button {
+  border-radius: 3px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  color: #aaa;
+  padding: 0.5em 1em;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1.25em;
+  letter-spacing: -0.0125em;
+  display: block;
+  margin: auto;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  color: #555;
+}
+
+footer {
+  width: 100%;
+  height: 20em;
+  background-color: #131313;
+  padding: 1%;
+  display: block;
+  margin: auto;
+  position: relative;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.ftr-lst {
+  float: left;
+  display: inline-block;
+  color: #fff;
+  width: 22.5%;
+  margin-right: 10%;
+  margin-bottom: 4%;
+}
+
+footer ol li:first-child {
+  color: #aaa;
+  margin-bottom: 1em;
+  font-weight: 100;
+  letter-spacing: -0.05em;
+  line-height: 1.25em;
+  cursor: default;
+}
+
+.ftr-lst li {
+  line-height: 1.4em;
+  letter-spacing: -0.025em;
+  cursor: pointer;
+}
+
+.ftr-lst li:last-child {
+  margin-bottom: 4%;
+}
+
+.dates {
+  color: #c63d3d;
+  margin-left: 0.75em;
+  cursor: default;
+}
+
+footer ol {
+  font-weight: 500;
+}
+
+footer ul {
+  color: #aaa;
+  padding: 0;
+  margin: auto;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline;
+  margin: auto;
+  padding: 0;
+  margin-right: 0.5em;
+  font-size: 0.875em;
+  line-height: 2em;
+  letter-spacing: 0.05em;
+}
+
+footer ul li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.copy {
+  padding: 2%;
+  background-color: #000;
+  color: #aaa;
+  text-align: center;
+  height: auto;
+}
+/*
+@media only screen and (min-width: 320px) {
+  [class*="mainright"],
+  .maingradient,
+  .box,
+  .bg-box,
+  .deals-box,
+  .deals,
+  .newsbox,
+  .top-page,
+  .prefooter,
+  .header,
+  .grid,
+  footer,
+  .copy,
+  .ftr-lst {
+    float: none;
+    width: auto;
+    display: block;
+    margin: auto;
+    height: auto;
+    padding: 2%;
+  }
+
+  .topnav {
+    width: 100%;
+  }
+
+  .header {
+    display: hidden;
+  }
+} */
