@@ -37,6 +37,7 @@ html {
   letter-spacing: 0.02em;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 .topnav::after {
@@ -90,8 +91,8 @@ h3:hover {
   right: 0;
   left: 0;
   border-bottom: 1px solid #eaeaea;
-  z-index: 1;
   box-shadow: 3px 2px 8px #e5e5e5;
+  z-index: 1;
 }
 
 .header::after {
@@ -522,6 +523,7 @@ video {
 .deals-box img {
   width: 100%;
   height: 75%;
+  cursor: pointer;
 }
 
 .deals-box h4 {
@@ -529,6 +531,12 @@ video {
   width: 100%;
   font-size: 0.95em;
   margin-bottom: 0.5em;
+}
+
+.deals-box h4:hover {
+  color: #f42;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .deals-box p {
@@ -674,7 +682,66 @@ footer ul li:hover {
   height: auto;
 }
 
-@media only screen and (max-width: 480px) {
+.header-smol {
+  width: 100%;
+  height: 5%;
+  position: fixed;
+  top: 0;
+  bottom: 40%;
+  left: 0;
+  border-bottom: 1px solid #eaeaea;
+  background-color: #fff;
+  box-shadow: 3px 2px 8px #e5e5e5;
+  z-index: 1;
+}
+
+.header-smol img {
+  height: 100%;
+  width: 15%;
+  float: left;
+  cursor: pointer;
+}
+
+.header-smol::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.header-smol ul {
+  width: 84.5%;
+  float: right;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  height: auto;
+}
+
+.header-smol li {
+  width: auto;
+  font-size: 48%;
+  padding-left: 3%;
+  line-height: 0.5%;
+  color: #000;
+  height: auto;
+  display: inline;
+  letter-spacing: -0.05%;
+  margin-right: -3.9%;
+}
+
+.opac {
+  opacity: 0.5;
+}
+
+.opac:hover {
+  opacity: 1;
+}
+
+.header-smol li:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   [class*="mainright"],
   .maingradient,
   .box,
@@ -690,18 +757,191 @@ footer ul li:hover {
   .copy,
   .ftr-lst {
     float: none;
-    width: auto;
+    width: 100%;
     display: block;
     margin: auto;
     height: auto;
-    padding: 2%;
+    padding: 0.5%;
   }
 
+  .top-page {
+    margin-top: 5%;
+  }
+
+  .header-smol {
+    font-size: 90%;
+  }
+
+  .header,
   .topnav {
+    display: none;
+  }
+
+  .ftr-lst:nth-of-type(2) {
+    float: right;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .header,
+  .topnav {
+    display: none;
+  }
+
+  .header-smol {
+    font-size: 205%;
+  }
+
+  .maingradient,
+  .news,
+  .deals,
+  .big-grid {
+    width: 100%;
+    padding: 0.5%;
+  }
+
+  .news {
+    padding-top: 25%;
+  }
+
+  .newsbox {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+
+  .bg-box {
+    width: 50%;
+    margin: auto;
+    display: block;
+  }
+
+  .bg-box:last-of-type {
+    display: none;
+  }
+
+  .deals {
+    padding-top: 3em;
+  }
+
+  .deals-box {
+    width: 49%;
+  }
+
+  [class*="mainright"] {
+    width: 49.75%;
+    padding: 0.5%;
+    margin-top: 0.5%;
+  }
+
+  .mainright2 {
+    margin-right: 0.5%;
+  }
+}
+
+.ftr-lst {
+  width: 33%;
+  display: inline-block;
+  margin: auto;
+}
+
+footer,
+.prefooter {
+  width: 100%;
+  padding: 5%;
+}
+
+footer ul {
+  display: block;
+  width: 90%;
+  margin-top: 35%;
+}
+
+footer ul li {
+  display: inline;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 979px) {
+  .header-smol {
+    display: none;
+  }
+
+  .header li {
+    font-size: 80%;
+  }
+
+  .maingradient {
     width: 100%;
   }
 
-  .header {
-    display: hidden;
+  [class*="mainright"] {
+    width: 49.75%;
+    margin-top: 0.5%;
+    margin-bottom: 5%;
+  }
+
+  .newsbox {
+    width: 49%;
+    display: inline;
+  }
+
+  .mainright2 {
+    margin-right: 0.5%;
+  }
+
+  .bg-box {
+    width: 49%;
+  }
+
+  .bg-box:last-of-type {
+    display: none;
+  }
+
+  .big-grid,
+  .deals,
+  .news {
+    width: 100%;
+    padding: 0.25%;
+    display: block;
+    margin: auto;
+  }
+
+  footer ul {
+    position: absolute;
+    bottom: 1%;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .newsbox {
+    width: 24%;
+  }
+
+  .maingradient {
+    width: 67%;
+  }
+
+  .mainright1 h6 {
+    margin-top: 5%;
+  }
+
+  .mainright2 h6 {
+    margin-top: -5%;
+  }
+
+  .news,
+  .big-grid,
+  .deals {
+    width: 100%;
+    padding: 1%;
+  }
+
+  footer ul {
+    position: absolute;
+    bottom: 2%;
+  }
+
+  .header-smol {
+    display: none;
   }
 }
