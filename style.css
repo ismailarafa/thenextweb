@@ -742,26 +742,111 @@ footer ul li:hover {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  [class*="mainright"],
-  .maingradient,
   .box,
   .bg-box,
   .deals-box,
   .deals,
-  .newsbox,
+  [class*="mainright"],
+  .maingradient,
   .top-page,
   .prefooter,
   .header,
+  .newsbox,
   .grid,
   footer,
-  .copy,
-  .ftr-lst {
+  .copy {
     float: none;
     width: 100%;
     display: block;
     margin: auto;
     height: auto;
-    padding: 0.5%;
+    padding: 3%;
+    font-size: 90%;
+  }
+
+  .maingradient,
+  .mainright1 {
+    margin-bottom: 3%;
+  }
+
+  .newsbox img,
+  .deals-box img {
+    float: left;
+    width: 30%;
+    height: 4em;
+  }
+
+  .newsbox p,
+  .newsbox h5 {
+    font-size: 90%;
+    width: 69%;
+    float: right;
+    margin: 0;
+    padding: 0;
+    padding-left: 5%;
+  }
+
+  .deals h4,
+  .deals p {
+    padding-left: 35%;
+  }
+
+  .deals-header h3 {
+    width: 45%;
+    float: left;
+  }
+
+  .deals-header p {
+    width: 30%;
+    padding: 0;
+    float: right;
+  }
+
+  .deals-header::after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+
+  .prefooter h1 {
+    font-size: 150%;
+  }
+
+  .prefooter h6 {
+    margin: 0;
+    margin-bottom: 4%;
+  }
+
+  .newsbox::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  .maingradient,
+  [class*="mainright"] {
+    height: 12em;
+    font-size: 70%;
+  }
+
+  .maingradient h6 {
+    margin-top: -42%;
+  }
+
+  .maingradient p {
+    margin-top: -1%;
+  }
+
+  .maingradient h1 {
+    font-size: 150%;
+  }
+
+  .mainright1 h6 {
+    margin-top: 0%;
+  }
+
+  .mainright2 h6 {
+    margin-top: 0%;
   }
 
   .top-page {
@@ -777,12 +862,28 @@ footer ul li:hover {
     display: none;
   }
 
-  .ftr-lst:nth-of-type(2) {
-    float: right;
+  .ftr-lst {
+    float: none;
+    padding: 0;
+    padding-right: 50%;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 8%;
+  }
+
+  .ftr-lst li {
+    padding-right: 0;
+    display: inline-block;
+    width: 20em;
+  }
+
+  .dates {
+    margin: auto;
+    padding: 0;
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 980px) {
   .header,
   .topnav {
     display: none;
@@ -792,7 +893,6 @@ footer ul li:hover {
     font-size: 205%;
   }
 
-  .maingradient,
   .news,
   .deals,
   .big-grid {
@@ -800,12 +900,8 @@ footer ul li:hover {
     padding: 0.5%;
   }
 
-  .news {
-    padding-top: 25%;
-  }
-
   .newsbox {
-    width: 50%;
+    width: 33.33333%;
     display: block;
     margin: auto;
   }
@@ -814,6 +910,15 @@ footer ul li:hover {
     width: 50%;
     margin: auto;
     display: block;
+  }
+
+  .top-page {
+    padding: 1%;
+    font-size: 67%;
+  }
+
+  .mainright1 h6 {
+    margin-top: 4%;
   }
 
   .bg-box:last-of-type {
@@ -825,24 +930,37 @@ footer ul li:hover {
   }
 
   .deals-box {
-    width: 49%;
+    width: 32.3%;
   }
 
-  [class*="mainright"] {
-    width: 49.75%;
-    padding: 0.5%;
-    margin-top: 0.5%;
+  .prefooter {
+    display: inline-block;
+    width: 100%;
   }
 
-  .mainright2 {
-    margin-right: 0.5%;
+  .prefooter h1 {
+    font-size: 250%;
+  }
+
+  .prefooter h6 {
+    margin-top: -1%;
+    margin-bottom: 3%;
+  }
+
+  .ftr-lst li {
+    display: inline-block;
+    width: 14.4em;
   }
 }
 
 .ftr-lst {
-  width: 33%;
+  width: 32%;
   display: inline-block;
   margin: auto;
+}
+
+.ftr-lst:first-of-type {
+  margin-right: 4%;
 }
 
 footer,
@@ -852,96 +970,15 @@ footer,
 }
 
 footer ul {
-  display: block;
-  width: 90%;
-  margin-top: 35%;
+  margin-top: 28%;
 }
 
-footer ul li {
-  display: inline;
-}
-
-@media only screen and (min-width: 769px) and (max-width: 979px) {
-  .header-smol {
-    display: none;
-  }
-
-  .header li {
-    font-size: 80%;
-  }
-
-  .maingradient {
-    width: 100%;
-  }
-
-  [class*="mainright"] {
-    width: 49.75%;
-    margin-top: 0.5%;
-    margin-bottom: 5%;
-  }
-
-  .newsbox {
-    width: 49%;
-    display: inline;
-  }
-
-  .mainright2 {
-    margin-right: 0.5%;
-  }
-
-  .bg-box {
-    width: 49%;
-  }
-
-  .bg-box:last-of-type {
-    display: none;
-  }
-
-  .big-grid,
-  .deals,
-  .news {
-    width: 100%;
-    padding: 0.25%;
-    display: block;
-    margin: auto;
-  }
-
+@media only screen and (min-width: 1280px) {
   footer ul {
-    position: absolute;
-    bottom: 1%;
-  }
-}
-
-@media only screen and (min-width: 980px) {
-  .newsbox {
-    width: 24%;
+    margin-top: 13%;
   }
 
-  .maingradient {
-    width: 67%;
-  }
-
-  .mainright1 h6 {
-    margin-top: 5%;
-  }
-
-  .mainright2 h6 {
-    margin-top: -5%;
-  }
-
-  .news,
-  .big-grid,
-  .deals {
+  .bg-box ol {
     width: 100%;
-    padding: 1%;
-  }
-
-  footer ul {
-    position: absolute;
-    bottom: 2%;
-  }
-
-  .header-smol {
-    display: none;
   }
 }
