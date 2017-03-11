@@ -96,13 +96,14 @@ ol {
 
 .toggle {
   display: block;
-  position: absolute;
-  right: 180px;
-  top: 0;
-  min-height: 12.6%;
+  position: fixed;
+  right: 0;
+  top: 2.1em;
+  height: 3.5em;
   cursor: pointer;
   background: rgba(0, 0, 0, 0.6);
   padding: 15px 15px 10px;
+  z-index: 20;
 }
 
 .menu-open {
@@ -133,6 +134,12 @@ ol {
 #nav.open .toggle .bar3 {
   -webkit-transform: rotate(-45deg) translate(7px, -6px);
   transform: rotate(-45deg) translate(7px, -6px);
+}
+
+#nav.open .toggle {
+  top: 1px;
+  height: 3.5em;
+  z-index: 20;
 }
 
 .topnav ul {
@@ -210,7 +217,7 @@ h3:hover {
 }
 
 .top-page {
-  width: 100%;
+  max-width: 98.7%;
   height: 27.5em;
   margin-top: 5.75em;
   background-color: rgba(0, 0, 0, 0.1);
@@ -812,6 +819,14 @@ footer ul li:hover {
     top: 0;
   }
 
+  #nav.open .toggle {
+    right: -49.75px;
+  }
+
+  #nav {
+    width: 130px;
+  }
+
   .maingradient,
   .mainright1 {
     margin-bottom: 3%;
@@ -929,6 +944,10 @@ footer ul li:hover {
 @media only screen and (min-width: 481px) and (max-width: 980px) {
   .topnav {
     display: none;
+  }
+
+  .toggle {
+    top: 0;
   }
 
   .header {
