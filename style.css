@@ -3,8 +3,6 @@
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -13,8 +11,18 @@ html {
   font: normal 100% 'Maven Pro', Arial, sans-serif;
 }
 
+body {
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
 .container {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -55,6 +63,78 @@ ol {
   float: right;
 }
 
+#nav {
+  text-align: center;
+  margin: 0;
+  padding: 15px 0;
+  max-width: 480px;
+  background: #24222d;
+  position: absolute;
+  top: 0;
+  right: -180px;
+  width: 180px;
+}
+
+#nav li {
+  display: block;
+}
+
+#nav li a {
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px 25px;
+  border: 2px solid transparent;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#nav li a:hover {
+  border: 2px solid #fff;
+}
+
+.toggle {
+  display: block;
+  position: absolute;
+  right: 180px;
+  top: 0;
+  min-height: 12.6%;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px 15px 10px;
+}
+
+.menu-open {
+  -webkit-transform: translate(-180px, 0);
+  transform: translate(-180px, 0);
+}
+
+.toggle .bar1,
+.toggle .bar2,
+.toggle .bar3 {
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  margin-bottom: 8px;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+#nav.open .toggle .bar1 {
+  -webkit-transform: rotate(45deg) translate(8px, 7px);
+  transform: rotate(45deg) translate(8px, 7px);
+}
+
+#nav.open .toggle .bar2 {
+  opacity: 0;
+}
+
+#nav.open .toggle .bar3 {
+  -webkit-transform: rotate(-45deg) translate(7px, -6px);
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
 .topnav ul {
   float: left;
   margin-left: -1.75em;
@@ -87,12 +167,15 @@ h3:hover {
   height: 3.7em;
   background-color: #fff;
   position: fixed;
+  max-width: 100%;
   top: 2em;
   right: 0;
   left: 0;
   border-bottom: 1px solid #eaeaea;
   box-shadow: 3px 2px 8px #e5e5e5;
   z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header::after {
@@ -105,6 +188,9 @@ h3:hover {
   width: 8em;
   float: left;
   height: 3.68em;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .header ol {
@@ -134,6 +220,7 @@ h3:hover {
 
 .maingradient {
   float: left;
+  background: -webkit-linear-gradient(271deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/switch.jpg");
   background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/switch.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -190,12 +277,14 @@ h3:hover {
 }
 
 .mainright1 {
+  background: -webkit-linear-gradient(271deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/screenshot.png");
   background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/screenshot.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .mainright2 {
+  background: -webkit-linear-gradient(271deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/mastercard.jpg");
   background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/mastercard.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -362,54 +451,63 @@ h3:hover {
 }
 
 #imj1 {
+  background: -webkit-linear-gradient(271deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/facebook.jpg");
   background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/facebook.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #imj2 {
+  background: -webkit-linear-gradient(271deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/iphone8.png");
   background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/iphone8.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #imj3 {
+  background: -webkit-linear-gradient(271deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/iem.jpg");
   background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/iem.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #imj4 {
+  background: -webkit-linear-gradient(271deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/kickasstorrents.jpg");
   background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/kickasstorrents.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #imj5 {
+  background: -webkit-linear-gradient(271deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/eye.png");
   background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/eye.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #imj6 {
+  background: -webkit-linear-gradient(271deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/internet.png");
   background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/internet.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #imj7 {
+  background: -webkit-linear-gradient(271deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/steam.jpg");
   background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/steam.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #imj8 {
+  background: -webkit-linear-gradient(271deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/army.jpg");
   background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/army.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #imj9 {
+  background: -webkit-linear-gradient(271deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/switch.jpg");
   background: linear-gradient(179deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)), url("images/switch.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -466,6 +564,7 @@ video {
   width: 25%;
   float: right;
   cursor: pointer;
+  -o-object-fit: cover;
   object-fit: cover;
   margin-top: -1em;
   min-height: 98%;
@@ -682,65 +781,6 @@ footer ul li:hover {
   height: auto;
 }
 
-.header-smol {
-  width: 100%;
-  height: 5%;
-  position: fixed;
-  top: 0;
-  bottom: 40%;
-  left: 0;
-  border-bottom: 1px solid #eaeaea;
-  background-color: #fff;
-  box-shadow: 3px 2px 8px #e5e5e5;
-  z-index: 1;
-}
-
-.header-smol img {
-  height: 100%;
-  width: 15%;
-  float: left;
-  cursor: pointer;
-}
-
-.header-smol::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.header-smol ul {
-  width: 84.5%;
-  float: right;
-  margin: 0;
-  padding: 0;
-  object-fit: cover;
-  height: auto;
-}
-
-.header-smol li {
-  width: auto;
-  font-size: 48%;
-  padding-left: 3%;
-  line-height: 0.5%;
-  color: #000;
-  height: auto;
-  display: inline;
-  letter-spacing: -0.05%;
-  margin-right: -3.9%;
-}
-
-.opac {
-  opacity: 0.5;
-}
-
-.opac:hover {
-  opacity: 1;
-}
-
-.header-smol li:hover {
-  cursor: pointer;
-}
-
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .box,
   .bg-box,
@@ -750,7 +790,6 @@ footer ul li:hover {
   .maingradient,
   .top-page,
   .prefooter,
-  .header,
   .newsbox,
   .grid,
   footer,
@@ -762,6 +801,15 @@ footer ul li:hover {
     height: auto;
     padding: 3%;
     font-size: 90%;
+  }
+
+  .header {
+    top: 0;
+  }
+
+  .toggle {
+    height: 58px;
+    top: 0;
   }
 
   .maingradient,
@@ -853,11 +901,6 @@ footer ul li:hover {
     margin-top: 5%;
   }
 
-  .header-smol {
-    font-size: 90%;
-  }
-
-  .header,
   .topnav {
     display: none;
   }
@@ -884,13 +927,12 @@ footer ul li:hover {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 980px) {
-  .header,
   .topnav {
     display: none;
   }
 
-  .header-smol {
-    font-size: 205%;
+  .header {
+    top: 0;
   }
 
   .news,
