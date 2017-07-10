@@ -1,5 +1,5 @@
 # thenextweb
-Responsive design project through a replica of [1][thenextweb.com].
+Responsive design project through a replica of [thenextweb.com][1].
 A project applying responsive design with CSS to thenextweb.com by [The Odin Project][2], and building a media query reporter.
 Visit this [link][3] if interested.
 
