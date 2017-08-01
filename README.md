@@ -5,4 +5,4 @@ Visit this [link][3] if interested.
 
 [1]:https://thenextweb.com/
 [2]:http://www.theodinproject.com/courses/html5-and-css3/lessons/building-with-responsive-design
-[3]:https://ismailarafa.github.io/thenextweb
+[3]:https://l0rdcafe.github.io/thenextweb
